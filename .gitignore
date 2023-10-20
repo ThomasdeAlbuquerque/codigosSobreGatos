@@ -37,15 +37,14 @@ bower_components
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
-
+mongo/
 # Dependency directories
 node_modules/
-
+mongo/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
-mongo/
 
 # TypeScript cache
 *.tsbuildinfo
@@ -56,6 +55,7 @@ mongo/
 # Optional eslint cache
 .eslintcache
 
+node_modules/
 # Optional stylelint cache
 .stylelintcache
 
