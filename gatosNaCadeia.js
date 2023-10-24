@@ -7,11 +7,6 @@ const gatosPresos = mongoose.model(gatosPresos,{
     ,idadedopreso: Number
 })
 
-async function criaUmGato (preso){   
-   await gatosPresos.create(preso);
-}
-
-
 const listaDeGatos = [
     {
         nome: "Carlos",
@@ -30,17 +25,13 @@ const listaDeGatos = [
     }
 ]
 
-criaUmGato(listaDeGatos[0])
 
 
-async function criaMultiplosGatos (gatosACriar, numeroDeGatos) {
-
-}
-
-criaMultiplosGatos(gatos2, 6)
-
+async function gatos (nome, numeroDeGatos) {
 let contador = 0
-while(contador <= 3) {
+while(contador <= numeroDeGatos -1) {
     console.log(contador)
     contador ++
+    }
 }
+listaDeGatos({nome:'carlos'})
